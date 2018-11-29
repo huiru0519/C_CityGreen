@@ -70,12 +70,10 @@ body {
 .button-default {
     color: #66803b;
     background-color: white;
-    padding: 3px 20px;
     font-family: DINPro;
     cursor: pointer;
-    margin: 50px 20px;
+    margin: 100px 20px;
     border: none;
-    font-size: 15px;
     z-index: 2;
     -webkit-transition: 0.3s all ease;
     transition: 0.3s ease all;
@@ -176,7 +174,7 @@ body {
     text-decoration: none;
     border-bottom: 1px solid rgba(0,0,0,0.25);
     text-align: center;
-    background-color: #91b553;
+    background-color: #ccc;
     font-family: DINPro Light;
     border-radius: 5px;
 }
@@ -191,6 +189,7 @@ body {
 
 #layers-control a.active {
     background-color: #91b553;
+    color: #ffffff;
 }
 
 #layers-control a.active:hover {
@@ -250,8 +249,8 @@ body {
 }
 
 #info-window {
-    right:15px;
-    top: 15px;
+    left: 15px;
+    top: 10px;
     width: 15vw;
     height: 20vh; 
     line-height: 18px;
@@ -261,12 +260,10 @@ body {
 
 .map-overlay1 {
     position: absolute;
-    background-color: rgba(0,0,0,.07);
     font-family: DINPro;
     padding: 15px;
     z-index: 1;
     text-align: center;
-    padding: 5px;
 }
 
 .park-image {
@@ -274,3 +271,16 @@ body {
     width: 300px;
 }
 
+.title2 {
+    color: white;
+    position: absolute;
+    top: 10px;
+    padding: 3px 5px;
+    font-family: DINPro;
+    margin: 5px 20px;
+    border: none;
+    font-size: 15px;
+    z-index: 2;
+    width: 200px;
+    text-align: center;
+}

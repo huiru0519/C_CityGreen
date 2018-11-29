@@ -94,11 +94,16 @@ for (i=0; i<layers.length; i++) {
         popupBody1 = stop.properties.PARK_TYPE;
         popupBody = '<img class="park-image" src="img/' + stop.properties.PARKNAME + '.jpg">';
       }
+        else if (stop.layer.id == 'green-solar-energy') {
+        popupTitle = stop.properties.Theme;
+        popupBody1 = stop.properties.Installati;
+        popupBody = stop.properties.Descriptio;
+      }
         else if (stop.layer.id == 'green-stormuva') {
         popupTitle = stop.properties.Webmap;
         popupBody1 = stop.properties.Address;
         popupBody = stop.properties.Descriptio;
-      } else if (stop.layer.id == 'green-solar-energy', 'green-material', 'green-city-market') {
+      } else if (stop.layer.id == 'green-material', 'green-city-market') {
         popupTitle = stop.properties.Theme;
         popupBody1 = stop.properties.Address;
         popupBody = stop.properties.Descriptio;
@@ -132,7 +137,7 @@ for (i=0; i<layers.length; i++) {
         
         for (i=0; i<layers.length; i++) {
 
-            $("#layers-control").append("<a href='#' id='" + layers[i][0] + "'>" + layers[i][1] + "</a>");
+            $("#layers-control").append("<a href='#' class='active' id='" + layers[i][0] + "'>" + layers[i][1] + "</a>");
 
         }
 
